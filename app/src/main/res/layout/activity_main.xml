@@ -100,15 +100,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tQuantite"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="quantite"
             android:layout_weight="0.7"
+            android:text="quantite"
             android:textSize="18sp" />
 
         <Spinner
@@ -117,8 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:entries="@array/listeQuantites"
-            android:spinnerMode="dialog"
-            />
+            android:spinnerMode="dialog" />
     </LinearLayout>
 
     <EditText
@@ -134,32 +133,50 @@
         android:layout_height="wrap_content"
         android:text="AJOUTER" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fillViewport="true"
+        >
     <TextView
         android:id="@+id/tRecaptitulatif"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:textSize="18sp"
         android:text="Recapitulatif" />
+    </ScrollView>
 
     <EditText
         android:id="@+id/eRemarques"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:layout_weight="1"
         android:ems="20"
         android:inputType="textPersonName"
         android:text="Remarques" />
 
-    <Button
-        android:id="@+id/bEnregistrer"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ENREGISTRER" />
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
-    <Button
-        android:id="@+id/bAnnuler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ANNULER" />
+        <Button
+            android:id="@+id/bEnregistrer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="ENREGISTRER" />
 
+        <Button
+            android:id="@+id/bAnnuler"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="ANNULER" />
+
+    </LinearLayout>
 
 </LinearLayout>
