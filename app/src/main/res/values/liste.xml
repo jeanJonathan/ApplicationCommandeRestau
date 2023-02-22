@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="listePlats">
+    <string-array name="listeEntrees">
         <item>Aucun</item>
         <item>Foie gras fait maison</item>
         <item>Saumon fume</item>
         <item>Salade verte</item>
         <item>Grambas poelees</item>
+    </string-array>
+    <string-array name="listePlats">
+        <item>Aucun</item>
+        <item>Tournedos de boeuf rossini</item>
+        <item>Filet de daurade</item>
+        <item>Magret de canard</item>
+        <item>Faux filet</item>
+        <item>Risottos aux légumes et parmesan</item>
+        <item>Lasagnes à la ratatouille</item>
+    </string-array>
+    <string-array name="listeDesserts">
+        <item>Aucun</item>
+        <item>Tiramisu maison</item>
+        <item>Iles flottantes</item>
+        <item>Crème brulée maison</item>
+        <item>Salade de fruits frais</item>
+        <item>Mousse au chocolat</item>
+    </string-array>
+    <string-array name="listeQuantites">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 </resources>
