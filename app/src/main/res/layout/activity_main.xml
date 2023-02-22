@@ -7,76 +7,97 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/logoresto"
-        android:paddingBottom="10dp"/>
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/tcompositionMenu"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="composition menu"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
         />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tEntrees"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Entrees" />
+        android:layout_height="112dp"
+        android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        />
+        <LinearLayout
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tPlat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="plat" />
+            <TextView
+                android:id="@+id/tEntrees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrees"
+                android:textSize="18sp"/>
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:entries="@array/listePlats"
-        />
+            <Spinner
+                android:id="@+id/spinEntrees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:spinnerMode="dialog"
+                android:entries="@array/listeEntrees" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tDessert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dessert" />
+        <LinearLayout
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:entries="@array/listeDesserts"
-        />
+            <TextView
+                android:id="@+id/tPlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plat"
+                android:textSize="18sp"/>
 
-    <TextView
-        android:id="@+id/tQuantite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="quantite" />
+            <Spinner
+                android:id="@+id/spinPlats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/listePlats"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:entries="@array/listeQuantites"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tDessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dessert"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/spinDessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/listeDesserts"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/eQuantite"
