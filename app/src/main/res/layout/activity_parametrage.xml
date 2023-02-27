@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParametrageActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tEntrees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrees"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinEntrees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/listeEntrees"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tPlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plat"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinPlats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/listePlats"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tDessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dessert"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinDessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/listeDesserts"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/eElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Modifier le nom de l'element choisi" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioEntree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Entree" />
+
+        <RadioButton
+            android:id="@+id/radioPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plat" />
+
+        <RadioButton
+            android:id="@+id/radioDessert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dessert" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bAjouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER" />
+    <Button
+        android:id="@+id/bEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENREGISTRER" />
+    <Button
+        android:id="@+id/bSupprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUPPRIMER" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des elements"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
