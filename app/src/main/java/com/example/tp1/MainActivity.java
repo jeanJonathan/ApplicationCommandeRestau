@@ -35,7 +35,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialisation des attributs correspondant aux objets graphiques
-
+        imageView = findViewById(R.id.imageView);
+        tcompositionMenu = findViewById(R.id.tcompositionMenu);
+        tEntrees = findViewById(R.id.tEntrees);
+        spinEntrees = findViewById(R.id.spinEntrees);
+        tPlat = findViewById(R.id.tPlat);
+        spinPlats = findViewById(R.id.spinPlats);
+        tDessert = findViewById(R.id.tDessert);
+        spinDessert = findViewById(R.id.spinDessert);
+        tQuantite = findViewById(R.id.tQuantite);
+        spinQuantite = findViewById(R.id.spinQuantite);
+        eQuantite = findViewById(R.id.eQuantite);
+        bAjouter = findViewById(R.id.bAjouter);
+        tRecaptitulatif = findViewById(R.id.tRecaptitulatif);
+        eRemarques = findViewById(R.id.eRemarques);
     }
     //Maintenant on utilise ses utiliser ces variables dans le reste de
     // notre code pour accéder aux propriétés et méthodes de chaque widget
