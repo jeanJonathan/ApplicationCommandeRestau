@@ -77,7 +77,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//On ecoute l'evenement dans le champ de saisie manuelle EditText
 
+        eQuantite.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                //Si la saisie de texte n'est pas vide
+                if(!charSequence.toString().isEmpty()){
+                    // Alors on desactive le spinner
+                    spinQuantite.setEnabled(false);
+                }
+                //Sinon on reactive
+                else {
+                    spinQuantite.setEnabled(true);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
     }
     //Declaration eventuelle de methodes
