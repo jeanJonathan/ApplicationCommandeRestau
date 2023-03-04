@@ -1,2 +1,2 @@
 # ApplicationCommandeRestau
-Unprocessable Entity - Repository creation failed. [Repository; description]custom: description control characters are not allowed
+Il s'agit d'une application Android pour gerer les commandes dans un restaurant
